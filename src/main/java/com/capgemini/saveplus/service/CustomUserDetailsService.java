@@ -1,5 +1,6 @@
 package com.capgemini.saveplus.service;
 import com.capgemini.saveplus.model.CustomUserDetails;
+import com.capgemini.saveplus.model.User;
 import com.capgemini.saveplus.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -30,4 +31,5 @@ public class CustomUserDetailsService implements UserDetailsService {
                 .orElseThrow(() -> new UsernameNotFoundException("Username not found"));
 
     }
+
 }
